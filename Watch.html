@@ -1,1 +1,27 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Anime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Watching: <span id="animeTitle"></span></h1>
+        <button onclick="goBack()">⬅ Back</button>
+    </header>
+    <div id="videoContainer">
+        <video id="animeVideo" controls></video>
+        <button id="likeBtn">👍 Like</button>
+        <button id="favBtn">⭐ Add to Favorites</button>
+    </div>
+    <div id="commentsSection">
+        <input type="text" id="commentInput" placeholder="Leave a comment...">
+        <button onclick="postComment()">Post</button>
+        <div id="commentsList"></div>
+    </div>
+    <script src="watch.js"></script>
+</body>
+  </html>
